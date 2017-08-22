@@ -7,6 +7,7 @@ public class ThreadService {
 	    public String ProdNum;
 	    public String Company;
 	    public String Plant;
+	    public String IpAddress;
 	    
 	    public String getThreadName() {
 			return ThreadName;
@@ -37,5 +38,11 @@ public class ThreadService {
 		}
 		public void setPlant(String plant) {
 			Plant = plant;
+		}
+		public String getIpAddress() {
+		    return IpAddress;
+		}
+		public void setIpAddress(String ipAddress) {
+			IpAddress = ipAddress;
 		}
 }

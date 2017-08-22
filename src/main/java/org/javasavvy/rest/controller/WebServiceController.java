@@ -60,7 +60,8 @@ import com.google.gson.Gson;
               		 && obj.ProdType.contains(ts.getProdType())
               		 && obj.ProdNum.contains(ts.getProdNum())
               		 && obj.Company.contains(ts.getCompany())
-              		 && obj.Plant.contains(ts.getPlant())) {
+              		 && obj.Plant.contains(ts.getPlant())
+              		 && obj.IpAddress.contains(ts.getIpAddress())) {
             	   listRemove.add(obj);
                } 
 		   }

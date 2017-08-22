@@ -3,10 +3,13 @@ package org.javasavvy.services;
 public class WorkerThread extends Thread {
 	 
 	public void run() {
+		MachineService machServ = new MachineService("10.XX.XX.XX");
         while (!this.isInterrupted()) {
             try {
-               System.out.println("Running "+this.getName());
-               this.sleep(30000);
+            	   machServ.ManufactureCount();
+               System.out.println("Running operation "+this.getName());
+               machServ.ManufactureDiff();
+               this.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 this.interrupt();
