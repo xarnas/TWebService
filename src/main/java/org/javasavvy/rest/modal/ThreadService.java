@@ -8,6 +8,7 @@ public class ThreadService {
 	    public String Company;
 	    public String Plant;
 	    public String IpAddress;
+	    public long SingleLabelQuantity;
 	    
 	    public String getThreadName() {
 			return ThreadName;
@@ -45,4 +46,10 @@ public class ThreadService {
 		public void setIpAddress(String ipAddress) {
 			IpAddress = ipAddress;
 		}
+		 public long getSingleLabelQuantity() {
+				return SingleLabelQuantity;
+			}
+		public void setSingleLabelQuantity(long LabelQuantity) {
+				SingleLabelQuantity = LabelQuantity;
+			}
 }

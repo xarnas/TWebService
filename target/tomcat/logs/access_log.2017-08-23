@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [23/Aug/2017:00:09:16 +0300] "GET /TerekasWebService/service/online-threads HTTP/1.1" 200 12 http-bio-8080-exec-1 94
-0:0:0:0:0:0:0:1 - - [23/Aug/2017:00:09:24 +0300] "POST /TerekasWebService/service/add-thread/ HTTP/1.1" 200 63 http-bio-8080-exec-4 120
-0:0:0:0:0:0:0:1 - - [23/Aug/2017:00:10:57 +0300] "POST /TerekasWebService/service/add-thread/ HTTP/1.1" 200 63 http-bio-8080-exec-1 186
-0:0:0:0:0:0:0:1 - - [23/Aug/2017:00:12:30 +0300] "POST /TerekasWebService/service/add-thread/ HTTP/1.1" 200 63 http-bio-8080-exec-1 138
-0:0:0:0:0:0:0:1 - - [23/Aug/2017:00:16:30 +0300] "POST /TerekasWebService/service/add-thread/ HTTP/1.1" 200 63 http-bio-8080-exec-1 214

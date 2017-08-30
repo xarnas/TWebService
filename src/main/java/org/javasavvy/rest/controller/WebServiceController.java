@@ -44,7 +44,7 @@ import com.google.gson.Gson;
 							produces={MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_JSON_VALUE})
 		public @ResponseBody String addThread(@RequestBody ThreadService ts){
 			list.add(ts);
-			WorkerThread wt1=new WorkerThread();  
+			WorkerThread wt1=new WorkerThread(ts.getIpAddress(),ts.SingleLabelQuantity);  
 			wt1.setName(ts.getThreadName());
 			wt1.start();
 	        return new Gson().toJson(new ResponseText("Thread started: "+ts.ThreadName+" Production order "+ts.ProdType+" "+ts.ProdNum));
@@ -61,7 +61,8 @@ import com.google.gson.Gson;
               		 && obj.ProdNum.contains(ts.getProdNum())
               		 && obj.Company.contains(ts.getCompany())
               		 && obj.Plant.contains(ts.getPlant())
-              		 && obj.IpAddress.contains(ts.getIpAddress())) {
+              		 && obj.IpAddress.contains(ts.getIpAddress())
+                     && (obj.SingleLabelQuantity == ts.getSingleLabelQuantity())){
             	   listRemove.add(obj);
                } 
 		   }
